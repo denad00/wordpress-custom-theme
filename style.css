@@ -1,0 +1,269 @@
+/*
+Theme Name: Pedalmania DE
+Author: de
+Description: Starter theme for learning about custom queries.
+Version: .1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pedalmania-de
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* RESET ========================== */
+/* TYPOGRAPHY ========================== */
+h1 {
+  font-family: "Bebas Neue", helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+.entry-title {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", helvetica, arial, sans-serif;
+  margin: 0 0.5rem;
+}
+
+body {
+  font-family: "Libre Baskerville", georgia, times, "times new roman", serif;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.entry-category {
+  font-size: 0.875rem;
+  text-transform: lowercase;
+}
+
+.read-more {
+  text-transform: lowercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
+/* BASE ELEMENTS ========================== */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+/* LAYOUT ========================== */
+body {
+  display: grid;
+  grid-gap: 4rem;
+}
+
+.site-header, .site-footer {
+  background-color: black;
+  color: #ddf;
+  padding: 1rem 0.5rem;
+}
+
+.site-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menus-search-container {
+  min-width: 320px;
+  position: absolute;
+  right: 0.5rem;
+  bottom: -0.5rem;
+}
+.menus-search-container .main-menu,
+.menus-search-container .main-social,
+.menus-search-container .search-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-main-clicked .main-menu {
+  opacity: 1;
+  z-index: 100;
+}
+
+.btn-social-clicked .main-social {
+  opacity: 1;
+  z-index: 100;
+}
+
+.btn-search-clicked .search-form {
+  opacity: 1;
+  z-index: 100;
+}
+
+body:not(.home) main {
+  display: grid;
+  grid-gap: 1rem;
+}
+@media screen and (min-width: 900px) {
+  body:not(.home) main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.home main .section {
+  display: grid;
+  grid-gap: 1rem;
+}
+@media screen and (min-width: 900px) {
+  .home main .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home main .section:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.home main {
+  display: grid;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.archive-search-title-wrapper {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.single .site-main {
+  display: block;
+}
+
+.single .site-main article {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 2%;
+}
+
+.single .site-main .entry-title-category-wrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.single .site-main .entry-thumbnail {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.single .site-main .entry-content {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.entry-title-category-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entry-category {
+  margin-right: 0.5rem;
+}
+
+/* NAVIGATION ========================== */
+/* BUTTONS ====================== */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1.25rem;
+  border: 2px solid #eef;
+}
+
+a {
+  text-decoration: none;
+}
+
+.entry-title a {
+  color: #444;
+}
+.entry-title a:visited {
+  color: #444;
+}
+.entry-title a:hover {
+  color: black;
+}
+
+.site-header a, .site-footer a {
+  color: #ddf;
+}
+
+.menus-search-container a {
+  color: black;
+  padding: 0.25rem;
+}
+.menus-search-container a:hover {
+  color: #444;
+}
+.menus-search-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 2px;
+  font-size: 0.875rem;
+}
+
+/* FORMS ========================== */
+.menus-search-container .search-form {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.menus-search-container .search-form {
+  margin-top: 0.5rem;
+}
+.menus-search-container .search-form label {
+  flex: 60% 0 1;
+}
+.menus-search-container .search-form label input {
+  width: 98%;
+}
+.menus-search-container .search-form input {
+  height: 3vh;
+}
+
+/* MEDIA ========================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ACCESSIBILITY ========================== */
+.screen-readers-text {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

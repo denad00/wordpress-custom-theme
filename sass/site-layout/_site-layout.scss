@@ -1,0 +1,9 @@
+
+body {
+    display: grid;
+    grid-gap: 4rem;
+}
+
+@import 'header-footer';
+@import 'main';
+@import 'content';

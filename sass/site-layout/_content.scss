@@ -1,0 +1,36 @@
+
+.single .site-main article {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 1rem;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+.single .site-main .entry-title-category-wrapper {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.single .site-main .entry-thumbnail {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.single .site-main .entry-content {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.entry-title-category-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.entry-category {
+    margin-right: .5rem;
+}
+

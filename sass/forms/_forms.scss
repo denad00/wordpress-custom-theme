@@ -1,0 +1,26 @@
+
+
+.menus-search-container .search-form {
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.menus-search-container .search-form {
+
+    margin-top: .5rem;
+
+    label {
+        flex: 60% 0 1;
+
+        input {
+            width: 98%;
+        }
+    }
+
+    input {
+        height: 3vh;
+    }
+}

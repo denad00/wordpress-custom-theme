@@ -1,0 +1,51 @@
+
+.site-header, .site-footer {
+    background-color: $color_header_footer_bg;
+    color: $color_header_footer;
+    padding: 1rem .5rem;
+}
+
+.site-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.menus-search-container {
+    min-width: 320px;
+    position: absolute;
+    right: .5rem;
+    bottom: -.5rem;
+
+    .main-menu, 
+    .main-social, 
+    .search-form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+}
+
+.btn-main-clicked .main-menu {
+    opacity: 1;
+    z-index: 100;
+}
+
+.btn-social-clicked .main-social {
+    opacity: 1;
+    z-index: 100;
+}
+
+.btn-search-clicked .search-form {
+    opacity: 1;
+    z-index: 100;
+}
+
+

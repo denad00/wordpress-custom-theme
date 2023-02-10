@@ -1,0 +1,54 @@
+/* BUTTONS ====================== */
+@import 'buttons';
+
+a {
+    text-decoration: none;
+
+}
+
+.entry-title {
+
+    a{
+        color: $color_links;
+    }
+
+    a:visited {
+        color: $color_links_visited;
+    }
+
+    a:hover {
+        color: $color_links_hover;
+    }
+
+}
+
+.site-header, .site-footer {
+    a {
+        color: $color_links_header_footer;
+    }
+}
+
+
+.menus-search-container {
+    a {
+        color: $color_links_menus_search_container;
+        padding: .25rem;
+    }
+
+    a:hover {
+        color: $color_links_hover_menus_search_container;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        gap: 2px;
+        font-size: 0.875rem;
+    }
+}
+
+

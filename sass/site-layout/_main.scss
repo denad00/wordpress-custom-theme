@@ -1,0 +1,40 @@
+
+body:not(.home) main {
+    display: grid;
+    grid-gap: 1rem;
+
+    @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.home main .section {
+    display: grid;
+    grid-gap: 1rem;
+
+    @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.home main .section:nth-of-type(2) {
+    @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.home main {
+    display: grid;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+.archive-search-title-wrapper {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.single .site-main {
+    display: block;;
+}

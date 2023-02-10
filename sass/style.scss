@@ -1,0 +1,38 @@
+/*
+Theme Name: Pedalmania DE
+Author: de
+Description: Starter theme for learning about custom queries.
+Version: .1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pedalmania-de
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// VARIABLES
+@import 'variables/variables';
+
+/* RESET ========================== */
+
+
+/* TYPOGRAPHY ========================== */
+@import "typography/typography";
+
+/* BASE ELEMENTS ========================== */
+@import "base-elements/base-elements";
+
+/* LAYOUT ========================== */
+@import "site-layout/site-layout";
+
+/* NAVIGATION ========================== */
+@import "navigation/navigation";
+
+/* FORMS ========================== */
+@import "forms/forms";
+
+/* MEDIA ========================== */
+@import "media/media";
+
+/* ACCESSIBILITY ========================== */
+@import "accessibility/accessibility";
